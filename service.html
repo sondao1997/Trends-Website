@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-tw.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <title>Nội Thất TRENDS</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Desktop menu -->
+      <nav class="h-[70px] bg-primary px-8 lg:h-[100px]">
+        <div class="flex h-full w-full items-center justify-between">
+          <div class="pb-4">
+            <img src="./images/trends_logo.png" class="w-[160px]" alt="" />
+          </div>
+          <!-- Navigation -->
+          <div class="hidden h-full md:block">
+            <ul class="flex h-full">
+              <li>
+                <a
+                  href="/index.html"
+                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                  ><span
+                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-secondary before:transition group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                    >Trang Chủ</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                  ><span
+                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                    >Giới Thiệu</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/service.html"
+                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                  ><span
+                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                    >Dịch Vụ</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/project.html"
+                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                  ><span
+                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                    >Dự Án</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/design.html"
+                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                  ><span
+                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                    >Thiết Kế Mẫu</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Contact button  -->
+
+          <div class="hidden md:block">
+            <a
+              href="tel:+0973766036"
+              class="rounded-[30px] bg-secondary px-[20px] py-[10px] text-[#000] hover:bg-yellow-300 hover:text-black lg:px-[40px] lg:py-[15px]"
+            >
+              Liên Hệ
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div
+            class="menu-icon relative flex h-full items-center justify-end md:hidden"
+          >
+            <label for="mobile-menu" class="fa fa-bars text-2xl text-white">
+              <!-- Open menu -->
+              <input
+                type="checkbox"
+                id="mobile-menu"
+                class="peer/mobile opacity-1 absolute bottom-0 left-0 right-0 top-0 z-10 m-auto hidden"
+              />
+              <div
+                class="overlay fixed left-0 top-0 z-10 h-screen w-full -translate-x-full bg-[#000000b3] transition duration-400 peer-checked/mobile:translate-x-0 md:hidden"
+              >
+                <!-- Close menu -->
+                <div class="fixed right-0 top-0">
+                  <span><i class="fa fa-close text-3xl"></i></span>
+                </div>
+                <!--  -->
+                <div class="z-50 h-screen w-3/4 bg-white">
+                  <div class="relative flex items-center justify-center">
+                    <img
+                      src="./images/trends_logo.png "
+                      class="w-[160px]"
+                      alt=""
+                    />
+                  </div>
+                  <nav class="px-[30px]">
+                    <ul>
+                      <li class="relative">
+                        <a
+                          href="/index.html"
+                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                        >
+                          trang chủ
+                        </a>
+                        <span
+                          class="absolute bottom-0 right-0 top-0 flex items-center"
+                          ><i class="fa-solid fa-chevron-right text-xs"></i
+                        ></span>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href="/about.html"
+                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                        >
+                          giới thiệu
+                        </a>
+                        <span
+                          class="absolute bottom-0 right-0 top-0 flex items-center"
+                          ><i class="fa-solid fa-chevron-right text-xs"></i
+                        ></span>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href="/service.html"
+                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                        >
+                          dịch vụ
+                        </a>
+                        <span
+                          class="absolute bottom-0 right-0 top-0 flex items-center"
+                          ><i class="fa-solid fa-chevron-right text-xs"></i
+                        ></span>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href="/project.html"
+                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                        >
+                          dự án
+                        </a>
+                        <span
+                          class="absolute bottom-0 right-0 top-0 flex items-center"
+                          ><i class="fa-solid fa-chevron-right text-xs"></i
+                        ></span>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href="/design.html"
+                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                        >
+                          Thiết Kế Mẫu
+                        </a>
+                        <span
+                          class="absolute bottom-0 right-0 top-0 flex items-center"
+                          ><i class="fa-solid fa-chevron-right text-xs"></i
+                        ></span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </label>
+            <!--  -->
+            <!-- Mobile menu -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Service -->
+    <div class="container bg-[#F5F5F5] p-8 lg:p-16">
+      <div class="mb-12">
+        <div class="mb-8 text-center">
+          <span class="text-title-primary">Dịch Vụ</span>
+        </div>
+        <div class="text-center">
+          <span class="text-title-secondary"
+            >Nâng Tầm Không Gian, Nâng Tầm Cuộc Sống</span
+          >
+        </div>
+      </div>
+      <div class="">
+        <div
+          class="flex flex-col justify-center gap-8 *:max-w-[550px] *:flex-1 *:shadow-sm lg:flex-row"
+        >
+          <div>
+            <div>
+              <img
+                class="h-[300px] w-full"
+                src="https://images.unsplash.com/photo-1696814543702-63d40f01f67b"
+                alt=""
+              />
+            </div>
+
+            <div class="w-full bg-white px-5 pb-8 pt-4">
+              <div>
+                <span class="text-lg font-bold">Thiết Kế Nội Thất Nhà Phố</span>
+              </div>
+              <div>
+                <span class="line-clamp-3"
+                  >Thiết kế nội thất nhà phố chú trọng tối ưu hóa không gian hạn
+                  chế, tạo sự thoải mái và thẩm mỹ. Phong cách hiện đại với nội
+                  thất đa chức năng và ánh sáng tự nhiên thường được ưa chuộng.
+                  Mục tiêu là tạo ra một không gian sống tiện nghi và gần
+                  gũi.</span
+                >
+              </div>
+              <div class="mt-5 text-right font-bold">
+                <a href=""
+                  ><span class="border-b-2 border-secondary text-black"
+                    >Xem Thêm</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                class="h-[300px] w-full"
+                src="https://plus.unsplash.com/premium_photo-1674676471154-1acce154992d"
+                alt=""
+              />
+            </div>
+            <div class="bg-white px-5 pb-8 pt-4">
+              <div>
+                <span class="text-lg font-bold"
+                  >Thiết Kế Nội Thất Chung cư</span
+                >
+              </div>
+              <div>
+                <span class="line-clamp-3"
+                  >Thiết kế nội thất chung cư phải cân nhắc giữa công năng và sự
+                  thoải mái trong không gian hạn chế. Sử dụng màu sắc sáng và
+                  nội thất thông minh để tạo cảm giác rộng rãi. Các khu vực
+                  chung như phòng khách và bếp được thiết kế mở để khuyến khích
+                  giao tiếp.</span
+                >
+              </div>
+              <div class="mt-5 text-right font-bold">
+                <a href=""
+                  ><span class="border-b-2 border-secondary text-black"
+                    >Xem Thêm</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-8 flex flex-col justify-center gap-8 *:max-w-[550px] *:flex-1 *:shadow-sm lg:flex-row"
+        >
+          <div>
+            <div>
+              <img
+                class="h-[300px] w-full"
+                src="https://plus.unsplash.com/premium_photo-1661964127131-e867864a8f83"
+                alt=""
+              />
+            </div>
+
+            <div class="w-full bg-white px-5 pb-8 pt-4">
+              <div>
+                <span class="text-lg font-bold"
+                  >Thiết Kế Nội Thất Văn Phòng</span
+                >
+              </div>
+              <div>
+                <span class="line-clamp-3"
+                  >Thiết kế nội thất văn phòng cần tạo ra môi trường làm việc
+                  hiệu quả và thoải mái. Các không gian mở khuyến khích giao
+                  tiếp, trong khi khu vực riêng tư dành cho làm việc tập trung.
+                  Sự tích hợp công nghệ và yếu tố xanh cũng ngày càng được chú
+                  trọng để nâng cao sức khỏe và năng suất làm việc.</span
+                >
+              </div>
+              <div class="mt-5 text-right font-bold">
+                <a href=""
+                  ><span class="border-b-2 border-secondary text-black"
+                    >Xem Thêm</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                class="h-[300px] w-full"
+                src="https://plus.unsplash.com/premium_photo-1670984940156-c7f833fe8397"
+                alt=""
+              />
+            </div>
+            <div class="bg-white px-5 pb-8 pt-4">
+              <div>
+                <span class="text-lg font-bold"
+                  >Thiết Kế Nội Thất Nhà Hàng</span
+                >
+              </div>
+              <div>
+                <span class="line-clamp-3"
+                  >Thiết kế nội thất nhà hàng không chỉ tạo bầu không khí ấm
+                  cúng mà còn phản ánh phong cách ẩm thực. Từ bàn ghế đến trang
+                  trí, mọi chi tiết đều hướng đến trải nghiệm của khách hàng.
+                  Ánh sáng và âm thanh cũng được điều chỉnh để tạo ra không gian
+                  thư giãn.</span
+                >
+              </div>
+              <div class="mt-5 text-right font-bold">
+                <a href=""
+                  ><span class="border-b-2 border-secondary text-black"
+                    >Xem Thêm</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Process -->
+    <div class="container py-24">
+      <div class="lg:flex">
+        <div class="w-full px-4 text-center lg:w-1/4 lg:p-0 lg:text-left">
+          <div class="mb-[40px]">
+            <span class="text-title-primary uppercase"
+              >qui trình làm việc tại trends</span
+            >
+          </div>
+          <div class="mb-[40px]">
+            <span class="text-title-secondary">4 Giai đoạn tiêu chuẩn</span>
+          </div>
+          <div>
+            <span
+              >Công ty TRENDS thực hiện quy trình thiết kế, sản xuất nội thất
+              chuyên nghiệp qua 4 bước tiêu chuẩn:</span
+            >
+          </div>
+        </div>
+        <div class="w-full lg:w-3/4">
+          <div class="relative">
+            <div
+              class="bar absolute right-0 top-16 -z-10 hidden h-4 w-[880px] -translate-y-1/2 bg-[#e3e4e8] before:absolute before:left-0 before:top-1/2 before:h-0.5 before:w-full before:-translate-y-1/2 before:bg-[#fff] lg:block"
+            ></div>
+            <div
+              class="flex w-full flex-wrap justify-center lg:justify-end lg:gap-4 lg:*:w-52"
+            >
+              <div class="mt-10 flex w-3/4 flex-col lg:mt-0">
+                <div class="relative flex items-center justify-center">
+                  <div
+                    class="connect-bar absolute -bottom-5 left-1/2 h-5 w-0.5 -translate-x-1/2 bg-primary"
+                  ></div>
+                  <div
+                    class="h-28 w-28 rounded-full border-b-2 border-primary bg-white p-2 lg:h-32 lg:w-32"
+                  >
+                    <div
+                      class="flex h-full w-full items-center justify-center rounded-full border bg-[#f6f6f6]"
+                    >
+                      <img
+                        src="./images/process-survey.svg"
+                        class="h-16 w-16 lg:h-20 lg:w-20"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 border-t bg-[#fff] p-6 shadow-lg">
+                  <div class="mb-2">
+                    <span class="text-title-primary"
+                      >Khảo sát và lấy yêu cầu
+                    </span>
+                  </div>
+                  <div class="mb-5">
+                    <span
+                      >-Các câu hỏi về phong cách thiết kế ưa thích (hiện đại,
+                      cổ điển, tối giản, v.v.). <br />
+                      -Diện tích và cấu trúc không gian cần thiết kế.<br />
+                      -Ngân sách dự kiến cho dự án</span
+                    >
+                  </div>
+                  <div class="text-center lg:text-right">
+                    <span
+                      class="text-8xl font-extrabold text-white shadow-md [text-shadow:_1px_1px_0_#FEF200,-1px_-1px_0_#FEF200,1px_-1px_0_#FEF200,-1px_1px_0_#FEF200]"
+                      >01</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10 flex w-3/4 flex-col lg:mt-0">
+                <div class="relative flex items-center justify-center">
+                  <div
+                    class="connect-bar absolute -bottom-5 left-1/2 h-5 w-0.5 -translate-x-1/2 bg-primary"
+                  ></div>
+                  <div
+                    class="h-28 w-28 rounded-full border-b-2 border-primary bg-white p-2 lg:h-32 lg:w-32"
+                  >
+                    <div
+                      class="flex h-full w-full items-center justify-center rounded-full border bg-[#f6f6f6]"
+                    >
+                      <img
+                        src="./images/process-design.svg"
+                        class="h-16 w-16 lg:h-20 lg:w-20"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 border-t bg-[#fff] p-6 shadow-lg">
+                  <div class="mb-2">
+                    <span class="text-title-primary">Thiết kế </span>
+                  </div>
+                  <div class="mb-5">
+                    <span
+                      >- Lên phác thảo thiết kế 2D và 3D. Lựa chọn vật liệu, màu
+                      sắc và bố trí nội thất.<br />
+                      - Tạo bản mô phỏng không gian để khách hàng hình dung rõ
+                      hơn.<br />
+                      - Ghi nhận ý kiến phản hồi từ khách hàng để điều chỉnh
+                      thiết kế.</span
+                    >
+                  </div>
+                  <div class="text-center lg:text-right">
+                    <span
+                      class="text-8xl font-extrabold text-white shadow-md [text-shadow:_1px_1px_0_#FEF200,-1px_-1px_0_#FEF200,1px_-1px_0_#FEF200,-1px_1px_0_#FEF200]"
+                      >02</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10 flex w-3/4 flex-col lg:mt-0">
+                <div class="relative flex items-center justify-center">
+                  <div
+                    class="connect-bar absolute -bottom-5 left-1/2 h-5 w-0.5 -translate-x-1/2 bg-primary"
+                  ></div>
+                  <div
+                    class="h-28 w-28 rounded-full border-b-2 border-primary bg-white p-2 lg:h-32 lg:w-32"
+                  >
+                    <div
+                      class="flex h-full w-full items-center justify-center rounded-full border bg-[#f6f6f6]"
+                    >
+                      <img
+                        src="./images/process-manufacture.svg"
+                        class="h-16 w-16 lg:h-20 lg:w-20"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 border-t bg-[#fff] p-6 shadow-lg">
+                  <div class="mb-2">
+                    <span class="text-title-primary">Sản xuất </span>
+                  </div>
+                  <div class="mb-5">
+                    <span
+                      >- Lập kế hoạch sản xuất và thời gian thực hiện.<br />
+                      - Lựa chọn nhà cung cấp vật liệu và sản xuất nội thất.<br />
+                      - Kiểm tra chất lượng sản phẩm trong quá trình sản
+                      xuất.<br />
+                      - Cập nhật tiến độ cho khách hàng.</span
+                    >
+                  </div>
+                  <div class="text-center lg:text-right">
+                    <span
+                      class="text-8xl font-extrabold text-white shadow-md [text-shadow:_1px_1px_0_#FEF200,-1px_-1px_0_#FEF200,1px_-1px_0_#FEF200,-1px_1px_0_#FEF200]"
+                      >03</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10 flex w-3/4 flex-col lg:mt-0">
+                <div class="relative flex items-center justify-center">
+                  <div
+                    class="connect-bar absolute -bottom-5 left-1/2 h-5 w-0.5 -translate-x-1/2 bg-primary"
+                  ></div>
+                  <div
+                    class="h-28 w-28 rounded-full border-b-2 border-primary bg-white p-2 lg:h-32 lg:w-32"
+                  >
+                    <div
+                      class="flex h-full w-full items-center justify-center rounded-full border bg-[#f6f6f6]"
+                    >
+                      <img
+                        src="./images/process-handshake.svg"
+                        class="h-16 w-16 lg:h-20 lg:w-20"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 border-t bg-[#fff] p-6 shadow-lg">
+                  <div class="mb-2">
+                    <span class="text-title-primary">Lắp Đặt và Bàn Giao </span>
+                  </div>
+                  <div class="mb-5">
+                    <span
+                      >- Lên kế hoạch lắp đặt và thời gian thực hiện. <br />
+                      - Bàn giao cho khách hàng, bao gồm hướng dẫn sử dụng và
+                      bảo trì.<br />
+                      - Thu thập phản hồi từ khách hàng sau khi bàn giao để cải
+                      thiện dịch vụ.</span
+                    >
+                  </div>
+                  <div class="text-center lg:text-right">
+                    <span
+                      class="text-8xl font-extrabold text-white shadow-md [text-shadow:_1px_1px_0_#FEF200,-1px_-1px_0_#FEF200,1px_-1px_0_#FEF200,-1px_1px_0_#FEF200]"
+                      >04</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer -->
+    <div class="container border-t-2 pt-16">
+      <div class="text-center">
+        <div class="mb-5">
+          <span class="text-title-primary"
+            >Khách hàng nổi bật của chúng tôi</span
+          >
+        </div>
+        <div class="mx-auto lg:w-1/2">
+          <span class="text-2xl"
+            >"Chúng tôi tự hào phục vụ khách hàng đa dạng, từ cá nhân đến doanh
+            nghiệp, bao gồm các chủ đầu tư bất động sản, các công ty nội thất và
+            các gia đình tìm kiếm không gian sống lý tưởng."</span
+          >
+        </div>
+      </div>
+      <div
+        class="logos group relative flex overflow-hidden whitespace-nowrap py-10"
+      >
+        <div
+          class="flex w-full flex-wrap gap-y-2 lg:animate-slide-left lg:flex-nowrap lg:justify-around"
+        >
+          <img class="mx-4 h-16 lg:mx-0" src="./images/aeon.png" alt="aeon" />
+          <img class="mx-4 h-16 lg:mx-0" src="./images/angia.jpg" alt="angia" />
+          <img
+            class="mx-4 h-16 lg:mx-0"
+            src="./images/thegangs.png"
+            alt="thegangs"
+          />
+          <img
+            class="mx-4 h-16 lg:mx-0"
+            src="./images/vinhomes.png"
+            alt="vinhomes"
+          />
+        </div>
+
+        <div
+          class="absolute left-0 flex w-full flex-wrap gap-y-2 lg:animate-slide-left2 lg:flex-nowrap lg:justify-around"
+        >
+          <img class="mx-4 h-16 lg:mx-0" src="./images/aeon.png" alt="aeon" />
+          <img class="mx-4 h-16 lg:mx-0" src="./images/angia.jpg" alt="angia" />
+          <img
+            class="mx-4 h-16 lg:mx-0"
+            src="./images/thegangs.png"
+            alt="thegangs"
+          />
+          <img
+            class="mx-4 h-16 lg:mx-0"
+            src="./images/vinhomes.png"
+            alt="vinhomes"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div
+      class="relative bg-[url('./images/carousel_3.jpg')] bg-cover bg-center"
+    >
+      <div class="h-full w-full bg-[#2E353C] py-16 opacity-90">
+        <div
+          class="container flex flex-col gap-8 *:flex-1 lg:flex-row [&:not(:first-child)]:border-t-2"
+        >
+          <div class="flex flex-col items-center lg:items-start">
+            <div class="mb-7 w-[160px]">
+              <img class="w-full" src="./images/trends_logo.png" alt="" />
+            </div>
+            <div class="mb-5 text-white">
+              <p>
+                Công ty thiết kế nội thất TRENDS chuyên cung cấp giải pháp thiết
+                kế sáng tạo và thi công hoàn thiện cho không gian sống và làm
+                việc. Với đội ngũ kiến trúc sư giàu kinh nghiệm, chúng tôi cam
+                kết mang đến những thiết kế độc đáo, phản ánh phong cách và nhu
+                cầu của từng khách hàng.
+              </p>
+            </div>
+            <div class="mb-5 flex items-center justify-start">
+              <div>
+                <i class="fa-solid fa-phone-volume text-xl text-secondary"></i>
+              </div>
+              <div class="pl-2 uppercase">
+                <div>
+                  <span class="text-xl font-semibold text-white"
+                    >+ 033 258 0688</span
+                  >
+                </div>
+                <div>
+                  <span class="text-title-primary">nội thất trends</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center lg:items-start">
+              <span class="text-lg text-white">Phương thức thanh toán</span>
+              <img class="w-1/2" src="./images/payment.png" alt="" />
+            </div>
+          </div>
+          <div class="text-center text-white lg:text-left">
+            <div class="mb-5">
+              <span class="text-title-primary">liên hệ hỗ trợ</span>
+            </div>
+            <ul class="*:mb-4">
+              <li><span>Email: Trends1209@gmail.com</span></li>
+              <li><span>Mr.Hiệp: +0973 76 60 36</span></li>
+              <li><span>Mrs.Tuyết: +0976 45 70 24</span></li>
+              <li>
+                <span
+                  >Địa chỉ xưởng sản xuất: Nhị Bình, Hóc Môn, TP.Hồ Chí
+                  Minh</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mx-auto lg:m-0">
+            <div class="mb-5">
+              <span class="text-title-primary">Kết Nối</span>
+            </div>
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnoithattrends&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=322986018310791"
+              width="340"
+              height="400"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div
+      class="contact fixed right-0 top-3/4 hidden rounded-s-md bg-white lg:inline-block"
+    >
+      <div class="">
+        <div class="mb-1 border-b-2">
+          <a href="https://zalo.me/0973766036">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              width="50"
+              height="50"
+              fill="gray"
+              class="hover:fill-blue-500"
+            >
+              <path
+                d="M630.352013 835.800687c-56.625672 0-113.251344-9.980305-163.216315-29.942963-23.312962-6.653537-39.969317-16.635889-59.94937-16.635889-19.98824 0-39.969317 13.31219-56.624648 23.292496-33.311687 16.635889-69.949118 23.286356-109.918435 19.962657-23.316032-3.326768-26.646893-16.638959-9.992585-29.942963 6.661723-6.658653 19.983123-13.31219 23.316032-19.963681 13.323447-6.658653 19.98517-19.965727 26.64587-29.946033 16.656355-26.621311 23.313985-46.582945 3.332908-69.873394C227.32082 619.536178 194.012204 539.684526 194.012204 449.848475c0-153.050792 106.585527-286.139949 256.472256-349.35469l-159.88136 0c-96.590895 0-179.862437 83.178421-179.862437 182.996824l0 449.172069c0 99.81431 83.271542 182.994778 179.862437 182.994778l443.004603 0c93.28357 0 174.113503-77.579913 179.551352-172.793438C836.590168 799.295262 736.793254 835.800687 630.352013 835.800687zM790.228257 546.338063c43.301202-3.328815 69.947072-26.616194 73.281003-76.525907-6.661723-49.907667-29.979802-73.199139-73.281003-79.852676-46.63104 6.652514-69.945025 29.945009-73.27691 79.852676C720.284255 519.721869 743.597217 543.009248 790.228257 546.338063zM790.228257 429.885817c19.984147 0 29.979802 13.308097 29.979802 39.926338s-9.995655 39.925315-29.979802 39.925315c-19.98517 0-29.975708-13.307074-33.307593-39.925315C760.252549 443.193915 770.243087 429.885817 790.228257 429.885817zM567.063595 546.338063c16.656355 0 29.978778-6.653537 39.97034-16.634866 3.332908 9.981329 9.994632 16.634866 19.984147 16.634866 13.323447 0 19.98517-9.982352 19.98517-26.616194l0-99.81738c0-19.962657-6.662747-26.618241-19.98517-26.618241-9.990538 0-16.651238 6.655584-19.984147 16.636912-6.661723-13.310144-19.98517-19.962657-39.97034-19.962657-39.969317 6.652514-63.282279 33.271778-66.615187 79.852676C503.78234 519.721869 527.095301 543.009248 567.063595 546.338063zM573.726342 429.885817c19.983123 0 29.978778 13.308097 33.307593 39.926338-3.328815 26.618241-13.32447 39.925315-33.307593 39.925315-19.98517 0-29.979802-13.307074-33.30964-39.925315C543.74654 443.193915 553.741171 429.885817 573.726342 429.885817zM683.643754 546.338063c13.322423 0 19.98517-6.653537 19.98517-23.291472L703.628924 350.034165c0-13.310144-6.66377-23.291472-19.98517-23.291472-13.32447 0-19.984147 9.981329-19.984147 23.291472l0 173.012426C663.659607 539.684526 670.320307 546.338063 683.643754 546.338063zM340.571141 363.342262c3.328815 9.981329 6.65763 16.635889 19.980054 16.635889l73.281003 0-89.933265 129.759319c-3.328815 3.326768-3.328815 9.984399-3.328815 16.636912 0 9.980305 6.65763 16.633842 23.312962 19.962657l109.918435 0c13.322423-3.328815 19.983123-9.982352 19.983123-19.962657 0-13.310144-6.6607-16.636912-19.983123-19.962657L393.863904 506.411725l86.600357-123.106806c6.661723-6.655584 6.661723-13.308097 6.661723-19.962657 0-13.308097-6.661723-19.963681-23.317055-19.963681L360.551194 343.378581C347.228771 343.378581 343.899956 350.034165 340.571141 363.342262z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/noithattrends">
+            <svg
+              fill="gray"
+              height="40px"
+              width="40px"
+              viewBox="0 0 250 330"
+              class="hover:fill-blue-500"
+            >
+              <g id="XMLID_834_">
+                <path
+                  id="XMLID_835_"
+                  d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                  c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                  V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                  C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                  c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>

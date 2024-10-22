@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/PlusJakartaSans-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./font/PlusJakartaSans-SemiBold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./font/PlusJakartaSans-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(./font/PlusJakartaSans-ExtraBold.ttf) format('truetype');
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #535353;
+  }
+  a {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-family: 'Plus Jakarta Sans';
+    color: white;
+  }
+}
+@layer utilities {
+  .text-title-primary {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fef200;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3.4px;
+  }
+
+  .text-title-secondary {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.7px;
+    color: #30373e;
+    font-weight: 700;
+  }
+
+  .text-title-white {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.7px;
+    color: #fff;
+    font-weight: 700;
+  }
+  @media (min-width: 1024px) {
+    .text-title-secondary {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1px;
+      color: #30373e;
+      font-weight: 700;
+    }
+
+    .text-title-white {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -1px;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
