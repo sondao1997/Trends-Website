@@ -24,177 +24,197 @@
   <body>
     <header>
       <!-- Desktop menu -->
-      <nav class="h-[70px] bg-primary px-8 lg:h-[100px]">
-        <div class="flex h-full w-full items-center justify-between">
-          <div class="pb-4">
-            <img src="./images/trends_logo.png" class="w-[160px]" alt="" />
-          </div>
-          <!-- Navigation -->
-          <div class="hidden h-full md:block">
-            <ul class="flex h-full">
-              <li>
-                <a
-                  href="/index.html"
-                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
-                  ><span
-                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-secondary before:transition group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
-                    >Trang Chủ</span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about.html"
-                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
-                  ><span
-                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
-                    >Giới Thiệu</span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/service.html"
-                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
-                  ><span
-                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
-                    >Dịch Vụ</span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/project.html"
-                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
-                  ><span
-                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
-                    >Dự Án</span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/design.html"
-                  class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
-                  ><span
-                    class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
-                    >Thiết Kế Mẫu</span
-                  >
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!--Contact button  -->
-
-          <div class="hidden md:block">
-            <a
-              href="tel:+0973766036"
-              class="rounded-[30px] bg-secondary px-[20px] py-[10px] text-[#000] hover:bg-yellow-300 hover:text-black lg:px-[40px] lg:py-[15px]"
-            >
-              Liên Hệ
-            </a>
-          </div>
-
-          <!-- Mobile menu button -->
+      <div class="bg-primary">
+        <div class="">
           <div
-            class="menu-icon relative flex h-full items-center justify-end md:hidden"
+            class="top-bar hidden h-11 w-full items-center justify-end border-b-[0.8px] border-gray-500 text-right text-sm text-white *:mr-5 *:pr-5 lg:flex"
           >
-            <label for="mobile-menu" class="fa fa-bars text-2xl text-white">
-              <!-- Open menu -->
-              <input
-                type="checkbox"
-                id="mobile-menu"
-                class="peer/mobile opacity-1 absolute bottom-0 left-0 right-0 top-0 z-10 m-auto hidden"
-              />
-              <div
-                class="overlay fixed left-0 top-0 z-10 h-screen w-full -translate-x-full bg-[#000000b3] transition duration-400 peer-checked/mobile:translate-x-0 md:hidden"
-              >
-                <!-- Close menu -->
-                <div class="fixed right-0 top-0">
-                  <span><i class="fa fa-close text-3xl"></i></span>
-                </div>
-                <!--  -->
-                <div class="z-50 h-screen w-3/4 bg-white">
-                  <div class="relative flex items-center justify-center">
-                    <img
-                      src="./images/trends_logo.png "
-                      class="w-[160px]"
-                      alt=""
-                    />
-                  </div>
-                  <nav class="px-[30px]">
-                    <ul>
-                      <li class="relative">
-                        <a
-                          href="/index.html"
-                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
-                        >
-                          trang chủ
-                        </a>
-                        <span
-                          class="absolute bottom-0 right-0 top-0 flex items-center"
-                          ><i class="fa-solid fa-chevron-right text-xs"></i
-                        ></span>
-                      </li>
-                      <li class="relative">
-                        <a
-                          href="/about.html"
-                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
-                        >
-                          giới thiệu
-                        </a>
-                        <span
-                          class="absolute bottom-0 right-0 top-0 flex items-center"
-                          ><i class="fa-solid fa-chevron-right text-xs"></i
-                        ></span>
-                      </li>
-                      <li class="relative">
-                        <a
-                          href="/service.html"
-                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
-                        >
-                          dịch vụ
-                        </a>
-                        <span
-                          class="absolute bottom-0 right-0 top-0 flex items-center"
-                          ><i class="fa-solid fa-chevron-right text-xs"></i
-                        ></span>
-                      </li>
-                      <li class="relative">
-                        <a
-                          href="/project.html"
-                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
-                        >
-                          dự án
-                        </a>
-                        <span
-                          class="absolute bottom-0 right-0 top-0 flex items-center"
-                          ><i class="fa-solid fa-chevron-right text-xs"></i
-                        ></span>
-                      </li>
-                      <li class="relative">
-                        <a
-                          href="/design.html"
-                          class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
-                        >
-                          Thiết Kế Mẫu
-                        </a>
-                        <span
-                          class="absolute bottom-0 right-0 top-0 flex items-center"
-                          ><i class="fa-solid fa-chevron-right text-xs"></i
-                        ></span>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </label>
-            <!--  -->
-            <!-- Mobile menu -->
+            <span class="border-r border-gray-500"
+              ><i class="fa-solid fa-phone-volume pr-2 text-secondary"></i
+              >Hotline: +0973766036</span
+            >
+            <span class="border-r border-gray-500"
+              ><i class="fa-solid fa-clock-rotate-left pr-2 text-secondary"></i>
+              Hỗ trợ 24/7</span
+            >
+            <span class=""
+              ><i class="fa-solid fa-location-dot pr-2 text-secondary"></i>Nhị
+              Bình, Hóc Môn, TP. Hồ Chí Minh</span
+            >
           </div>
+          <nav class="container h-[70px] bg-primary lg:h-[80px]">
+            <div class="flex h-full w-full items-center justify-between">
+              <div class="pb-4">
+                <img src="./images/trends_logo.png" class="w-[160px]" alt="" />
+              </div>
+              <!-- Navigation -->
+              <div class="hidden h-full md:block">
+                <ul class="flex h-full">
+                  <li>
+                    <a
+                      href="/index.html"
+                      class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                      ><span
+                        class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-secondary before:transition group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                        >Trang Chủ</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about.html"
+                      class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                      ><span
+                        class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                        >Giới Thiệu</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/service.html"
+                      class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                      ><span
+                        class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                        >Dịch Vụ</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/project.html"
+                      class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                      ><span
+                        class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                        >Dự Án</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/design.html"
+                      class="group flex h-full w-full items-center justify-center p-2 lg:px-8"
+                      ><span
+                        class="relative transition duration-400 before:absolute before:bottom-[-10px] before:left-0 before:h-0.5 before:w-full before:origin-bottom-left before:scale-x-0 before:bg-yellow-400 before:transition before:duration-400 group-hover:text-secondary group-hover:before:origin-bottom-left group-hover:before:scale-x-100"
+                        >Thiết Kế Mẫu</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!--Contact button  -->
+
+              <div class="hidden md:block">
+                <a
+                  href="tel:+0973766036"
+                  class="rounded-[30px] bg-secondary px-[20px] py-[10px] text-[#000] hover:bg-yellow-300 hover:text-black lg:px-[40px] lg:py-[15px]"
+                >
+                  Liên Hệ
+                </a>
+              </div>
+
+              <!-- Mobile menu button -->
+              <div
+                class="menu-icon relative flex h-full items-center justify-end md:hidden"
+              >
+                <label for="mobile-menu" class="fa fa-bars text-2xl text-white">
+                  <!-- Open menu -->
+                  <input
+                    type="checkbox"
+                    id="mobile-menu"
+                    class="peer/mobile opacity-1 absolute bottom-0 left-0 right-0 top-0 z-10 m-auto hidden"
+                  />
+                  <div
+                    class="overlay fixed left-0 top-0 z-10 h-screen w-full -translate-x-full bg-[#000000b3] transition duration-400 peer-checked/mobile:translate-x-0 md:hidden"
+                  >
+                    <!-- Close menu -->
+                    <div class="fixed right-0 top-0">
+                      <span><i class="fa fa-close text-3xl"></i></span>
+                    </div>
+                    <!--  -->
+                    <div class="z-50 h-screen w-3/4 bg-white">
+                      <div class="relative flex items-center justify-center">
+                        <img
+                          src="./images/trends_logo.png "
+                          class="w-[160px]"
+                          alt=""
+                        />
+                      </div>
+                      <nav class="px-[30px]">
+                        <ul>
+                          <li class="relative">
+                            <a
+                              href="/index.html"
+                              class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                            >
+                              trang chủ
+                            </a>
+                            <span
+                              class="absolute bottom-0 right-0 top-0 flex items-center"
+                              ><i class="fa-solid fa-chevron-right text-xs"></i
+                            ></span>
+                          </li>
+                          <li class="relative">
+                            <a
+                              href="/about.html"
+                              class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                            >
+                              giới thiệu
+                            </a>
+                            <span
+                              class="absolute bottom-0 right-0 top-0 flex items-center"
+                              ><i class="fa-solid fa-chevron-right text-xs"></i
+                            ></span>
+                          </li>
+                          <li class="relative">
+                            <a
+                              href="/service.html"
+                              class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                            >
+                              dịch vụ
+                            </a>
+                            <span
+                              class="absolute bottom-0 right-0 top-0 flex items-center"
+                              ><i class="fa-solid fa-chevron-right text-xs"></i
+                            ></span>
+                          </li>
+                          <li class="relative">
+                            <a
+                              href="/project.html"
+                              class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                            >
+                              dự án
+                            </a>
+                            <span
+                              class="absolute bottom-0 right-0 top-0 flex items-center"
+                              ><i class="fa-solid fa-chevron-right text-xs"></i
+                            ></span>
+                          </li>
+                          <li class="relative">
+                            <a
+                              href="/design.html"
+                              class="block border-b border-solid border-[#e5e5e5] py-[15px] text-sm font-normal capitalize text-[#30373e]"
+                            >
+                              Thiết Kế Mẫu
+                            </a>
+                            <span
+                              class="absolute bottom-0 right-0 top-0 flex items-center"
+                              ><i class="fa-solid fa-chevron-right text-xs"></i
+                            ></span>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </label>
+                <!--  -->
+                <!-- Mobile menu -->
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
     <!-- About us -->
@@ -656,6 +676,6 @@
       </div>
     </div>
 
-    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="./js/preline.js"></script>
   </body>
 </html>
